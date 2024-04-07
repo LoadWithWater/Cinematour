@@ -3,7 +3,10 @@ body {
     background-image: url('https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg');
     background-size: cover;
 }
-
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
 
 
 header {
@@ -135,9 +138,120 @@ container {
 }
 
 
+.seat_selectButton {
+    width: 300px;
+    height: 70px;
+    border: none;
+
+    margin-top: 50px;
+    border-radius: 10px;
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+.seat_selectButton:hover {
+    color:#FFFFFF;
+    background-color: tomato;
+    border-color: tomato;
+    cursor: pointer;
+}
+
 footer {
     width: 100%;
     height: 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: rgb(56, 56, 56);
+}
+
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.registerContainer {
+    border-radius: 5px;
+    border: 10px solid tomato;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form {
+    padding: 30px 50px 30px 30px;
+}
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control lacel {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+/* .form-control.success input {
+    border-color: var(--success-color);
+}
+.form-control.error input {
+    border-color: var(--error-color);
+} */
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: tomato;
+    border: 2px solid tomato;
+    border: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 107%;
+    transition: 0.3s all;
+}
+.form button:hover {
+    background-color: #FFFFFF;
+    color: tomato;
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.loginContainer {
+    border-radius: 5px;
+    border: 10px solid tomato;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
 }

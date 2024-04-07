@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link href="src/style.css" rel="stylesheet">
 </head>
-<body class="login">
-    <div class="loginContainer">
+<body class="register">
+    <div class="registerContainer">
         <form id="form" class="form">
-            <h2>Login CinemaTour!</h2>
-
+            <h2>Register With CinemaTour!</h2>
+            <div class="form-control success">
+                <label for="username">닉네임</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
             <div class="form-control error">
                 <label for="email">이메일</label>
                 <input type="text" id="email" placeholder="Enter email">
@@ -21,18 +25,15 @@
                 <input type="password" id="password" placeholder="Enter password">
                 <small>Error Message</small>
             </div>
-
-
-            <button>Login</button>
-
-            <div style="margin-top: 10px;">
-                <span>Not in CinemaTour?</span>
-                <a href="./register.html" style="text-decoration: none; color: black;">Register with us!</a>
+            <div class="form-control">
+                <label for="password2">비밀번호 확인</label>
+                <input type="password" id="password2" placeholder="Enter password again">
+                <small>Error Message</small>
             </div>
-            
+
+            <button>Submit</button>
         </form>
     </div>
-
 
 
     <script src="./src/script.js"></script>
