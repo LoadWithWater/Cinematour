@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg');
+    background-size: cover;
+}
+
+
+
+header {
+    background-color: black;
+    height: 50px;
+}
+#header_menu {
+    display: flex;
+    justify-content: space-between;
+}
+#header_menu>a {
+    margin-top: 10px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+container {
+    display: flex;
+    justify-content: center;
+}
+.movie_header {
+    width: 80%;
+}
+.movie_header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+}
+.movie_header img {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.sub_title {
+    color: #FFFFFF;
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie_info {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    color: #FFFFFF;
+    background-color: tomato;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: 800;
+
+    border: 10px solid #FFFFFF;
+}
+
+
+
+.movie_posters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 80%;
+    height: 300px;
+    background: tomato;
+    border: 10px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.movie_poster button {
+    width: 150px;
+    height: 200px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.movie_poster button:hover {
+    cursor: pointer;
+}
+.movie_poster img {
+    transition: 0.3s all;
+}
+.movie_poster img:hover {
+    width: 198px;
+    height: 275px;
+}
+
+.movie_times {
+    margin-top: 50px;
+    width: 80%;
+    height: 50px;
+    background: tomato;
+    border: 10px solid #FFFFFF;
+    border-radius: 10px;
+}
+.movie_time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.movie_time button {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    flex-grow: 1;
+
+    width: 100px;
+    height: 50px;
+    font-size: 32px;
+    background-color: #FFFFFF;
+    
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+.movie_time button:hover {
+    color:#FFFFFF;
+    background-color: tomato;
+    border-color: tomato;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 200px;
+    background-color: rgb(56, 56, 56);
+}
