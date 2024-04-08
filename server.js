@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/img'));
 
 // 누군가 내 사이트에 접속하면 보내는 것
 app.get('/', (요청, 응답) => {
-  응답.sendFile(__dirname + '/seatselect.html')
+  응답.sendFile(__dirname + '/index.html')
 })
 
 app.get('/login', (요청, 응답) => {
