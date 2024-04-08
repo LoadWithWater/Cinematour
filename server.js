@@ -12,9 +12,15 @@ app.get('/', (요청, 응답) => {
 })
 
 app.get('/login', (요청, 응답) => {
-    // 다른 사이트로 리디렉션
-    console.log('Requested path:', __dirname + '/login.html'); // 경로 검증을 위한 로그
     응답.sendFile(__dirname + '/login.html');
+});
+
+app.get('/register', (요청, 응답) => {
+    응답.sendFile(__dirname + '/register.html');
+});
+
+app.get('/seatselect', (요청, 응답) => {
+    응답.sendFile(__dirname + '/seatselect.html');
 });
   
 app.listen(port, () => {
